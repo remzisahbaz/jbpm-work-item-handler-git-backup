@@ -45,5 +45,36 @@ jbpm work-item-handler-git-backup
         )
 )
 ````
+
+````
+[
+        [
+            "name" : "MyWIHGitDefinitions",
+            "displayName" : "MyWIHGitDefinitions",
+            "category" : "mywihgit",
+            "description" : "",
+            "defaultHandler" : "mvel: new com.example.git.MyWIHGitWorkItemHandler()",
+            "documentation" : "mywihgit/index.html",
+
+            "parameters" : [
+                                "JBPM_REPO_URL" : new StringDataType()
+                ,"BACKUP_REPO_URL" : new StringDataType()
+
+            ],
+            "results" : [
+                                "Result" : new StringDataType()
+
+            ],
+            "mavenDependencies" : [
+                                 "com.example.git:mywihgit:7.61.4-SNAPSHOT"
+
+            ],
+            "icon" : "MyWIHGitDefinitions.png"
+
+        ]
+
+]
+
+````
 ![image](https://github.com/user-attachments/assets/4519236b-6a2c-477c-94c8-784ae01b10dc)
 
